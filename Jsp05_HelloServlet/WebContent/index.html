@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+</head>
+<body>
+
+	<button onclick="location.href='hello.do?command=hello'">hello(get)</button>
+	
+	<form action="hello.do" method="post">
+		<input type="hidden" name="command" value="hello"/>
+		<input type="submit" value="hello(post)"/>
+	</form>
+	
+	<button onclick="location.href='./controller.do?command=hello'">hello2</button><br/>
+	<button onclick="location.href='/hello.do?command=hello'">hello3</button>
+	
+</body>
+</html>
